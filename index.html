@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Javascript Todo List</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
@@ -13,7 +13,19 @@
   </head>
   <body>
     <header><h1>Javascript Todo List</h1></header>
-    
+    <!-- Form: First way to do an input for a Todo List -->
+<form>
+    <input type="text" class="todo-input">
+    <button class="todo-button" type="submit">
+        <!-- Use Font Awesome library -->
+        <i class="fas fa-plus-square"></i>
+    </button>
+</form>
+
+<!-- Div: Second way to do an input for a Todo List -->
+<div class="todo-container">
+    <ul class="todo-list"></ul>
+</div>
     <script src="app.js"></script>
   </body>
 </html>
