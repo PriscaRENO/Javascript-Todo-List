@@ -21,6 +21,8 @@ header {
   font-size: 2rem;
 }
 
+/* Form CSS */
+
 header,
 form {
   display: flex;
@@ -35,7 +37,6 @@ form button {
   font-size: 2rem;
   border: none;
   background-color: #f0f0f0;
-  /* margin-right: 1rem; */
 }
 
 form button {
@@ -56,4 +57,66 @@ form button:hover {
 form input {
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
+}
+
+/* DIV tasks */
+
+.todo {
+  display: flex;
+  justify-content: center;
+}
+
+li {
+  list-style: none;
+  width: 30%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  background-color: #e8e4e4;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.complete-btn,
+.trash-btn {
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  border: none;
+  color: #f0f0f0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.complete-btn {
+  background-color: #3706ea;
+}
+
+.trash-btn {
+  background-color: #3706ea;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.complete-btn:hover {
+  background-color: green;
+  color: #3706ea;
+  transition: all 0.3s ease;
+}
+
+.trash-btn:hover {
+  background-color: #f0f0f0;
+  color: #3706ea;
+  transition: all 0.3s ease;
+}
+
+.fa-trash,
+.fa-check {
+  pointer-events: none;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
 }
