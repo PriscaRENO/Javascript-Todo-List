@@ -13,19 +13,33 @@
   </head>
   <body>
     <header><h1>Javascript Todo List</h1></header>
-    <!-- Form: First way to do an input for a Todo List -->
-<form>
-    <input type="text" class="todo-input">
-    <button class="todo-button" type="submit">
-        <!-- Use Font Awesome library -->
-        <i class="fas fa-plus-square"></i>
-    </button>
-</form>
 
-<!-- Div: Second way to do an input for a Todo List -->
-<div class="todo-container">
-    <ul class="todo-list"></ul>
-</div>
-    <script src="app.js"></script>
+    <div class="todo_container">
+      <div class="form-filter_container">
+        <!-- Form: input for a Todo List -->
+        <form>
+            <input type="text" class="todo-input">
+            <button class="todo-button" type="submit">
+                <!-- Use Font Awesome library -->
+                <i class="fas fa-plus-square"></i>
+            </button>
+        </form>
+
+        <!-- Add a filter -->
+        <div class="select">
+          <select name="todos" class="filter-todo">
+            <option value="all">All tasks</option>
+            <option value="completed">Completed</option>
+            <option value="uncompleted">To do</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Create a Todo List -->
+      <div class="todo-list_container">
+          <ul class="todo-list"></ul>
+      </div>
+    </div>
+        <script src="app.js"></script>
   </body>
 </html>
